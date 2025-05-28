@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoras Canpackers - Transparência e inovação</title>
+    <style>
+        :root {
+            --azul-claro: #189bbd;
+            --azul-escuro: #011433;
+            --azul-medio: #006dac;
+            --cinza-claro: #eff1f3;
+            --branco: #ffffff;
+            --azul-profundo: #002e64;
+        }
+
+        /* Reset básico */
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--azul-escuro), var(--azul-profundo));
+            color: var(--branco);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: var(--cinza-claro);
+            display: flex;
+            height: 100px;
+            align-items: center;
+            
+        }
+
+        .container {
+            background-color: var(--cinza-claro);
+            color: var(--azul-escuro);
+            margin-top: 25px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            animation: slideUp 0.6s ease-out;
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        .card {
+            background-color: var(--branco);
+            border: 2px solid var(--azul-claro);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+             margin-top: 25px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-color: var(--azul-medio);
+        }
+
+        .card h2 {
+            color: var(--azul-escuro);
+        }
+
+        .card p {
+            color: var(--azul-medio);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: var(--azul-claro);
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: var(--azul-escuro);
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+
+        footer {
+            text-align: center;
+            color: var(--cinza-claro);
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: var(--azul-claro);
+            text-decoration: underline;
+        }
+
+        .logo-img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        /* Animação inicial */
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadoras Canpackers
+
+        <h3>Transparência e Inovação 🚀</h3>
+    </h1>
+
+    
+
+    <div class="container">
+        <div class="card">
+            <h2>Calculadora de Remuneração</h2>
+            <p>Ferramenta para calcular remuneração.</p>
+            <a href="https://diegofausto.github.io/calcremuneracao/">Visitar Página</a>
+        </div>
+
+        <div class="card">
+            <h2>PPR 2024</h2>
+            <p>Informações sobre o PPR 2024.</p>
+            <a href="https://diegofausto.github.io/ppr2024/">Visitar Página</a>
+        </div>
+
+        <div class="card">
+            <h2>Prévia PPR</h2>
+            <p>Prévia das informações do PPR.</p>
+            <a href="https://diegofausto.github.io/previappr/">Visitar Página</a>
+        </div>
+    </div>
+    <footer>
+        <p>Em caso de dúvida ou sugestão de melhoria <a href="https://forms.office.com/pages/responsepage.aspx?id=2y9-1Si1002wtjJa5MC4TmYzjJWCI2RNlvtuXGCkX2xUMk42NEhCTEFFS0ZQUlEwUVRUNVhFRzQ5WCQlQCN0PWcu&route=shorturl">clique aqui</a>.</p>
+        <p>Desenvolvido pelo Time de RH Local da CP BR</p>
+    </footer>
+</body>
+</html>
